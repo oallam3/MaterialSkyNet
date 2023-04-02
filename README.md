@@ -1,7 +1,7 @@
 # MaterialSkyNet
 An all in one machine learning package designed to provide key insight about feature-target relationships for any given dataset of materials
 
-This code is a script for training, evaluating, and interpreting machine learning models for predicting partition coefficients. The main components of the code include:
+This code is a script for training, evaluating, and interpreting machine learning models. The main components of the code include:
 
 Data preprocessing: The script reads in a data file and preprocesses the data by splitting it into training and testing sets, scaling the features, and applying optional transformations to the features.
 Model training and evaluation: The script supports various model types, including LASSO, ANN, and other models from the scikit-learn library. It trains the models using GridSearchCV or RandomizedSearchCV, optionally with early stopping or bootstrapping. The performance of the models is evaluated using metrics such as R2, MSE, and MAE.
