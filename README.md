@@ -1,7 +1,7 @@
 # MaterialSkyNet
 An all in one machine learning package designed to provide key insight about feature-target relationships for any given dataset of materials
 
-#Overview
+## Overview
 
 This code is a script for training, evaluating, and interpreting machine learning models. The main components of the code include:
 
@@ -13,7 +13,7 @@ This code is a script for training, evaluating, and interpreting machine learnin
 - The script is highly customizable, with several options controlled by variables such as bootstrap, transform_features, compound, lasso_filter, search, early_stop, use_latest_model, run_shap, and others
 
 
-#Dependencies
+## Dependencies
 
 To run this script, you will need the following Python packages:
 
@@ -24,7 +24,7 @@ To run this script, you will need the following Python packages:
 - shap
 
 
-#Installation
+## Installation
 
 Clone the repository or download the ZIP file and extract it to a directory of your choice.
 
@@ -36,7 +36,7 @@ Install the required packages using pip.
 pip install -r requirements.txt
 
 
-#Usage
+## Usage
 
 Place your dataset in CSV format in the same directory as the script. Ensure that the dataset contains features and target variables.
 Customize the script by modifying the variables at the beginning of the script. Key variables include:
@@ -54,7 +54,7 @@ Run the script. The script will preprocess the data, engineer features, train th
 python partition_coefficient_prediction.py
 
 
-#Outputs
+## Outputs
 
 The script generates the following outputs:
 
@@ -66,7 +66,7 @@ The script generates the following outputs:
 - A report summarizing the model performance, hyperparameters, and feature
 
 #########################################################################################################################################################
-
+## Some more info
 Everything under "Model Setup" in the main script (mat_skynet.py) is self explanatory. But here's the jist: This script is specifically designed to tackly the problem of statistical uncertainty pertaining to training on small/limited datasets. To circumvent this, the model will:
 a) train as many bootstrapped surrogates as you'd like. This is controlled by n_models. You can turn off bootstrapping entirely by changing the "bootstrap" to "NO". I told you it was straight forward!
 
