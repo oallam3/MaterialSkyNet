@@ -28,12 +28,7 @@ To run this script, you will need the following Python packages:
 
 Clone the repository or download the ZIP file and extract it to a directory of your choice.
 
-git clone https://github.com/GeorgiaTech/PartitionCoefficientPrediction.git
-
-
-Install the required packages using pip.
-
-pip install -r requirements.txt
+git clone https://github.com/oallam3/MaterialSkyNet.git
 
 
 ## Usage
@@ -51,7 +46,7 @@ Customize the script by modifying the variables at the beginning of the script. 
 - run_shap: Set to 'YES' to calculate SHAP values for model interpretability, or 'NO' to disable it.
 
 Run the script. The script will preprocess the data, engineer features, train the specified model(s), tune hyperparameters, evaluate performance using various metrics, and generate plots for model performance, feature importance, and SHAP values.
-python partition_coefficient_prediction.py
+python mat_sknet.py
 
 
 ## Outputs
