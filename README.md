@@ -62,7 +62,7 @@ The script generates the following outputs:
 
 #########################################################################################################################################################
 ## Some more info
-Everything under "Model Setup" in the main script (mat_skynet.py) is self explanatory. But here's the jist: This script is specifically designed to tackly the problem of statistical uncertainty pertaining to training on small/limited datasets. To circumvent this, the model will:
+Everything under "Model Setup" in the main script (mat_skynet.py) is self explanatory. But here's the jist: This script is specifically designed to tackle the problem of statistical uncertainty pertaining to training on small/limited datasets. To circumvent this, the model will:
 a) train as many bootstrapped surrogates as you'd like. This is controlled by n_models. You can turn off bootstrapping entirely by changing the "bootstrap" to "NO". I told you it was straight forward!
 
 b) In the case of small datasets, and this is especially true for relatively simpler models such as kernel ridge regression, the model may have a difficult time mapping the complex nonlinear relations between the input features and target properties. To overcome this issue, you can augment your original features with new features which are simply the original features transformed via non-linear functions (you can play around with those in the script)...controlled via "transform_features" variable.
