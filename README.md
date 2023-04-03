@@ -6,7 +6,7 @@ An all in one machine learning package designed to provide key insight about fea
 This code is a script for training, evaluating, and interpreting machine learning models. The main components of the code include:
 
 - Data preprocessing: The script reads in a data file and preprocesses the data by splitting it into training and testing sets, scaling the features, and applying optional transformations to the features.
-- Model training and evaluation: The script supports various model types, including LASSO, ANN, and other models from the scikit-learn library. It trains the models using GridSearchCV or RandomizedSearchCV, optionally with early stopping or bootstrapping. The performance of the models is evaluated using metrics such as R2, MSE, and MAE.
+- Model training and evaluation: The script supports various model types, including GPR, KRR, ANN, and other models from the scikit-learn library. It trains the models using GridSearchCV or RandomizedSearchCV, optionally with early stopping or bootstrapping. The performance of the models is evaluated using metrics such as R2, MSE, and MAE.
 - Feature selection: The script offers an option to perform feature selection using LASSO regression, which can be applied with or without bootstrapping. After LASSO-based feature selection, a new dataset is created containing only the selected features.
 - SHAP values: The script calculates SHAP values for the model to provide interpretability and understand the contributions of individual features to the model predictions.
 - Plotting: The script generates various plots to visualize the model performance on training and testing sets, as well as the SHAP values for individual features.
